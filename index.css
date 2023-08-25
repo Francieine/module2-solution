@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+
+p{
+    border: 1px solid black;
+    margin-bottom: 15px;
+    background-color: gray;
+    width: 90%; /*ocupa 90% da celula*/
+    height: 150px;
+    margin-right: auto; /*centraliza a tag de paragrafo  dentro da div*/
+    margin-left: auto; /*centraliza a tag de paragrafo  dentro da div*/
+
+}
+
+@media (min-width: 768px) and (max-width:991px){ /*responsividade media configuração*/
+    .p1, .p2 , .p3{
+        width: 50%;
+    }
+}
