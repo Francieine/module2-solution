@@ -2,20 +2,41 @@
     box-sizing: border-box;
 }
 
-
-p{
-    border: 1px solid black;
-    margin-bottom: 15px;
+.row{
+    width: 100%;
+}
+.div-section{
+    margin: auto;
+    padding: auto;
+    width: 20%;
     background-color: gray;
-    width: 90%; /*ocupa 90% da celula*/
-    height: 150px;
-    margin-right: auto; /*centraliza a tag de paragrafo  dentro da div*/
-    margin-left: auto; /*centraliza a tag de paragrafo  dentro da div*/
+    border: 1px solid black;
+    float: left;
 
+}
+p{
+    text-align: left;
+}
+
+#subtitle-1{
+    background-color: rgb(212, 153, 162);
+    float: right;
+    border: 1px solid black;
+}
+#subtitle-2{
+    background-color: rgb(145, 60, 21);
+    float: right;
+    border: 1px solid black;
+    color: white;
+}
+#subtitle-3{
+    background-color: rgb(182, 153, 79);
+    float: right;
+    border: 1px solid black;
 }
 
 @media (min-width: 768px) and (max-width:991px){ /*responsividade media configuração*/
-    .p1, .p2 , .p3{
-        width: 50%;
+    .div-section{
+
     }
 }
