@@ -1,10 +1,11 @@
+/*its considerate the modification made in the code, whitout considerate de default browser devices*/
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background-color: lightgray;
+    background-color: whitesmoke;
 
 }
 
@@ -13,51 +14,55 @@ body {
 }
 
 .box {
+    /*devices box here*/
     width: 480px;
     height: 280px;
-    border: 1px solid black;
-    margin: 20px;
-    margin-right: 90px;
+    border: 3px solid black;
+    margin: 50px 50px 50px;
     float: left;
-
-
 }
 
 div>p {
+    /*devices boxe's content here*/
     text-align: left;
     width: 100%;
 }
 
 h1 {
+    /*devices main title here*/
     text-align: center;
+    margin-top: 10px;
 }
 
 h2 {
+    /*devices subtitle here*/
     width: 110px;
     height: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
     position: relative;
     top: -20px;
     right: -77%;
     text-align: center;
 }
 
+/*styling boxes*/
 #div-1 {
-    background-color: #cdcd;
+    background-color: gray;
 }
 
 #div-2 {
-    background-color: #dcdc;
+    background-color: gray;
 }
 
 #div-3 {
-    background-color: rgba(104, 159, 221, 0.8);
+    background-color: gray;
 }
 
 #subtitle-1 {
-    background-color: pink;
+    background-color: rgb(219, 152, 175);
 }
 
+/*Styling subtitles*/
 #subtitle-2 {
     background-color: rgba(177, 59, 59, 0.671);
     color: white;
@@ -65,4 +70,24 @@ h2 {
 
 #subtitle-3 {
     background-color: rgba(221, 221, 91, 0.452);
+}
+
+/*responsive code part*/
+
+@media (min-width: 992px) {
+
+    /*Large Screen - Styles in this block only applied screen size is over 992px wide.*/
+    .col-lg-4 {}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+
+    /* Medium Screen - Styles in this block only applied screen size is atleast 768px wide, but no more than 1023px.*/
+    .col-md-6 {}
+}
+
+@media (max-width: 767px) {
+
+    /*Small Screen - Styles in this block only applied screen size is atleast 300px wide, but no more 767px.*/
+    .col-sm-6 {}
 }
